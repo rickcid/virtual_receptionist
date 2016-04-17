@@ -1,377 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
 
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-        <title>CallAnswered</title>
+  <title>Call Answered</title>
 
-        <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- Custom CSS -->
-        <link href="css/agency.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/agency.css" rel="stylesheet">
 
-        <!-- Custom Fonts -->
-        <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+  <!-- Custom Fonts -->
+  <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-          ga('create', 'UA-65760637-1', 'auto');
-          ga('send', 'pageview');
+    ga('create', 'UA-65760637-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 
-        </script>
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
-    </head>
+    fbq('init', '1738543939723588');
+    fbq('track', "PageView");
+  </script>
+  <noscript>
+      <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1738543939723588&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
 
-    <body id="page-top" class="index">
+</head>
 
-        <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header page-scroll">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand page-scroll" href="#page-top">CallAnswered</a>
-                </div>
+<body id="page-top" class="index">
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="hidden">
-                            <a href="#page-top"></a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#features">Features</a>
-                        </li>
-                        <li class="">
-                            <a class="page-scroll" href="#benefits">Benefits</a>
-                        </li>                        
-                        <li class="active">
-                            <a class="page-scroll" href="#pricing">Pricing</a>
-                        </li>
-                        <li class="active">
-                            <a class="page-scroll" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container-fluid -->
-        </nav>
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top">CallAnswered</a>
+      </div>
 
-        <!-- Header -->
-        <header>
-            <div class="container">
-                <div class="intro-text">
-                    <div class="intro-heading">Never Lose a Call!</div>
-                    <div class="intro-lead-in">Generate more business by improving your customer engagement.</div>
-                    <a href="#features" class="page-scroll btn btn-xl">Tell Me More</a>
-                </div>
-            </div>
-        </header>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#features">Features</a>
+          </li>
+          <li class="">
+            <a class="page-scroll" href="#benefits">Benefits</a>
+          </li>
+          <li class="active">
+            <a class="page-scroll" href="#pricing">Pricing</a>
+          </li>
+          <li class="active">
+            <a class="page-scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
 
-        <!-- Features Section -->
-        <section id="features">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Features</h2>
-                        <h3 class="section-subheading text-muted">Our value added service features.</h3>
-                    </div>
-                </div>
-                <div class="row text-center">
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-heading">Never Lose a Call!</div>
+        <div class="intro-lead-in">Generate more business by improving your customer engagement.</div>
+        <a href="#features" class="page-scroll btn btn-xl">Tell Me More</a>
+      </div>
+    </div>
+  </header>
 
-                    <div>
-                      <div class="col-md-3">
-                        <span class="fa-stack fa-4x">
+  <!-- Features Section -->
+  <section id="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Features</h2>
+          <h3 class="section-subheading text-muted">Our value added service features.</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+
+        <div>
+          <div class="col-md-3">
+            <span class="fa-stack fa-4x">
                             <i class="fa fa-circle fa-stack-2x text-primary"></i>
                             <i class="fa fa-share fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="service-heading">Transfer Calls From Any Line</h4>
-                        <p class="text-muted">Allow phone calls that you cannot immediately take to be trasferred to one of our professional and cordial operators.</p>
-                      </div>
-                    </div>
-                    
-                    <div class="col-md-3">
-                      <span class="fa-stack fa-4x">
+            <h4 class="service-heading">Transfer Calls From Any Line</h4>
+            <p class="text-muted">Allow phone calls that you cannot immediately take to be trasferred to one of our professional and cordial operators.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <span class="fa-stack fa-4x">
                           <i class="fa fa-circle fa-stack-2x text-primary"></i>
                           <i class="fa fa-bullhorn fa-stack-1x fa-inverse"></i>
                       </span>
-                      <h4 class="service-heading">Get Instant Notifications</h4>
-                      <p class="text-muted">Receive instant and detailed email notifications containing the messages people leave with your personalized receptionist.</p>
-                    </div>
+          <h4 class="service-heading">Get Instant Notifications</h4>
+          <p class="text-muted">Receive instant and detailed email notifications containing the messages people leave with your personalized receptionist.</p>
+        </div>
 
-                    <div class="col-md-3">
-                      <span class="fa-stack fa-4x">
+        <div class="col-md-3">
+          <span class="fa-stack fa-4x">
                           <i class="fa fa-circle fa-stack-2x text-primary"></i>
                           <i class="fa fa-user fa-stack-1x fa-inverse"></i>
                       </span>
-                      <h4 class="service-heading">Quality Connections</h4>
-                      <p class="text-muted">Provide your current and potential customers with a consistent, engaging, and professional connection, as opposed to a recorded voicemail.</p>
-                    </div>
+          <h4 class="service-heading">Quality Connections</h4>
+          <p class="text-muted">Provide your current and potential customers with a consistent, engaging, and professional connection, as opposed to a recorded voicemail.</p>
+        </div>
 
-                    <div class="col-md-3">
-                      <span class="fa-stack fa-4x">
+        <div class="col-md-3">
+          <span class="fa-stack fa-4x">
                           <i class="fa fa-circle fa-stack-2x text-primary"></i>
                           <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
                       </span>
-                      <h4 class="service-heading">24/7 Answering Service</h4>
-                      <p class="text-muted">We provide call answering services to fit your needs, with customizable hours, in order to answer your calls when you need it the most.</p>
-                    </div>
-                </div>
+          <h4 class="service-heading">24/7 Answering Service</h4>
+          <p class="text-muted">We provide call answering services to fit your needs, with customizable hours, in order to answer your calls when you need it the most.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Grid Section -->
+  <section id="benefits" class="bg-light-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Benefits</h2>
+          <h3 class="section-subheading text-muted" id="benefits-subheading">How will our service benefit you?</h3>
+        </div>
+        <div class="col-sm-12 col-lg-12">
+          <div class="col-sm-12 col-md-6">
+            <div class="col-sm-12 well well-sm">
+              <i class="fa fa-check-circle"></i><span class="benefits-spacing">Never miss a business opportunity because you could not get to the phone.</span>
             </div>
-        </section>
-
-        <!-- Benefits Grid Section -->
-        <section id="benefits" class="bg-light-gray">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Benefits</h2>
-                        <h3 class="section-subheading text-muted" id="benefits-subheading">How will our service benefit you?</h3>
-                    </div>
-                    <div class="col-sm-12 col-lg-12">
-                      <div class="col-sm-12 col-md-6">
-                        <div class="col-sm-12 well well-sm">
-                          <i class="fa fa-check-circle"></i><span class="benefits-spacing">Never miss a business opportunity because you could not get to the phone.</span>
-                        </div>
-                        <div class="col-sm-12 well well-sm">
-                          <i class="fa fa-check-circle"></i><span class="benefits-spacing">Free-up time and resources toward managing your core business.</span>
-                        </div>
-                        <div class="col-sm-12 well well-sm">
-                          <i class="fa fa-check-circle"></i><span class="benefits-spacing">Forward calls from your mobile phone when you are unavailable.</span>
-                        </div>
-                        <div class="col-sm-12 well well-sm">
-                          <i class="fa fa-check-circle"></i><span class="benefits-spacing">Focus your time on the individual or task at hand.</span>
-                        </div>
-                      </div>
-                      <div class="col-sm-12 col-md-6">
-                        <div class="col-sm-12 well well-sm">
-                          <i class="fa fa-check-circle"></i><span class="benefits-spacing">Have calls answered promptly with care and professionalism.</span>
-                        </div>
-                        <div class="col-sm-12 well well-sm">
-                          <i class="fa fa-check-circle"></i><span class="benefits-spacing">Generate satisfied customers who can always reach you.</span>
-                        </div>
-                        <div class="col-sm-12 well well-sm">
-                          <i class="fa fa-check-circle"></i><span class="benefits-spacing">Provide a receptionist at the fraction of the price of an onsite employee.</span>
-                        </div>
-                        <div class="col-sm-12 well well-sm">
-                          <i class="fa fa-check-circle"></i><span class="benefits-spacing">Give your company a stronger professional image.</span>
-                        </div>
-                      </div>
-                      
-                    </div>              
-                </div>
+            <div class="col-sm-12 well well-sm">
+              <i class="fa fa-check-circle"></i><span class="benefits-spacing">Free-up time and resources toward managing your core business.</span>
             </div>
-        </section>
+            <div class="col-sm-12 well well-sm">
+              <i class="fa fa-check-circle"></i><span class="benefits-spacing">Forward calls from your mobile phone when you are unavailable.</span>
+            </div>
+            <div class="col-sm-12 well well-sm">
+              <i class="fa fa-check-circle"></i><span class="benefits-spacing">Focus your time on the individual or task at hand.</span>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="col-sm-12 well well-sm">
+              <i class="fa fa-check-circle"></i><span class="benefits-spacing">Have calls answered promptly with care and professionalism.</span>
+            </div>
+            <div class="col-sm-12 well well-sm">
+              <i class="fa fa-check-circle"></i><span class="benefits-spacing">Generate satisfied customers who can always reach you.</span>
+            </div>
+            <div class="col-sm-12 well well-sm">
+              <i class="fa fa-check-circle"></i><span class="benefits-spacing">Provide a receptionist at the fraction of the price of an onsite employee.</span>
+            </div>
+            <div class="col-sm-12 well well-sm">
+              <i class="fa fa-check-circle"></i><span class="benefits-spacing">Give your company a stronger professional image.</span>
+            </div>
+          </div>
 
-        <!-- Pricing Section -->
-        <section id="pricing">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-lg-12 text-center">
-                        <h2 class="section-heading">Pricing</h2>
-                        <h3 class="section-subheading text-muted">Our plan options.</h3>
-                    </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-lg-12 text-center">
+          <h2 class="section-heading">Pricing</h2>
+          <h3 class="section-subheading text-muted">Our plan options.</h3>
+        </div>
+      </div>
+      <div class="center-content text-center">
+        <div class="col-xs-12 col-md-12">
+
+          <div class="col-xs-12 col-md-3">
+            <div class="panel">
+              <div class="panel-heading pricing-heading">
+                <h3 class="panel-title">Plus Plan</h3>
+              </div>
+              <div class="panel-body panel-body-style">
+                <span class="price-amount">$99</span>/month
+              </div>
+              <div class="pricing-panel-details text-muted">
+                <div class="price-feature">
+                  <p id="dfcolor"><i class="fa fa-star"></i><span class="benefits-spacing">75 Minutes</span></p>
                 </div>
-                <div class="center-content text-center">
-                  <div class="col-xs-12 col-md-12">
-
-                    <div class="col-xs-12 col-md-3">
-                      <div class="panel">
-                        <div class="panel-heading pricing-heading">
-                          <h3 class="panel-title">Plus Plan</h3>
-                        </div>
-                        <div class="panel-body panel-body-style">
-                          <span class="price-amount">$99</span>/month
-                        </div>
-                        <div class="pricing-panel-details text-muted">
-                          <div class="price-feature">
-                            <p id="dfcolor"><i class="fa fa-star"></i><span class="benefits-spacing">75 Minutes</span></p>
-                          </div>
-                        </div>
-<!--                         <div style="color: black;">
-                          <button type="button" class="btn btn-default" style="color: black;">Sign-up</button> 
+              </div>
+              <!--                         <div style="color: black;">
+                          <button type="button" class="btn btn-default" style="color: black;">Sign-up</button>
                         </div> -->
-                      </div>
-<!--                       <div class="">
-                        <button type="button" class="btn btn-default btn-lg" style="color: black;">Sign-up</button> 
+            </div>
+            <!--                       <div class="">
+                        <button type="button" class="btn btn-default btn-lg" style="color: black;">Sign-up</button>
                       </div><br> -->
-                    </div>
-                    
-                    <div class="col-xs-12 col-md-3">
-                      <div class="panel">
-                        <div class="panel-heading pricing-heading">
-                          <h3 class="panel-title">Pro Plan</h3>
-                        </div>
-                        <div class="panel-body panel-body-style">
-                          <span class="price-amount">$199</span>/month
-                        </div>
-                        <div class="pricing-panel-details text-muted">
-                          <div class="price-feature">
-                            <p id="dfcolor"><i class="fa fa-star"></i><span class="benefits-spacing">175 Minutes</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+          </div>
 
-                    <div class="col-xs-12 col-md-3">
-                      <div class="panel">
-                        <div class="panel-heading pricing-heading">
-                          <h3 class="panel-title">Ultra Plan</h3>
-                        </div>
-                        <div class="panel-body panel-body-style">
-                          <span class="price-amount">$299/</span>/month
-                        </div>
-                        <div class="pricing-panel-details text-muted">
-                          <div class="price-feature">
-                            <p id="dfcolor"><i class="fa fa-star"></i><span class="benefits-spacing">275 Minutes</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-
-                    <div class="col-xs-12 col-md-3">
-                      <div class="panel">
-                        <div class="panel-heading pricing-heading">
-                          <h3 class="panel-title">Premium Plan</h3>
-                        </div>
-                        <div class="panel-body panel-body-style">
-                          <span class="price-amount">$499</span>/month
-                        </div>
-                        <div class="pricing-panel-details text-muted">
-                          <div class="price-feature">
-                            <p id="dfcolor"><i class="fa fa-star"></i><span class="benefits-spacing">475 Minutes</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div> 
-
+          <div class="col-xs-12 col-md-3">
+            <div class="panel">
+              <div class="panel-heading pricing-heading">
+                <h3 class="panel-title">Pro Plan</h3>
+              </div>
+              <div class="panel-body panel-body-style">
+                <span class="price-amount">$199</span>/month
+              </div>
+              <div class="pricing-panel-details text-muted">
+                <div class="price-feature">
+                  <p id="dfcolor"><i class="fa fa-star"></i><span class="benefits-spacing">175 Minutes</span></p>
                 </div>
-                <div class="center-content">
-                  <span class="text-minified text-muted">$85 setup charge applied at sign-up | Higher volume packages are available upon request.</span>
-                </div>
+              </div>
             </div>
-        </section>
-      
-         <!-- Contact Section -->
-        <section id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Contact</h2>
-                        <h3 class="section-subheading text-muted">Contact me with more information about your product</h3>
-                    </div>
+          </div>
+
+          <div class="col-xs-12 col-md-3">
+            <div class="panel">
+              <div class="panel-heading pricing-heading">
+                <h3 class="panel-title">Ultra Plan</h3>
+              </div>
+              <div class="panel-body panel-body-style">
+                <span class="price-amount">$299/</span>/month
+              </div>
+              <div class="pricing-panel-details text-muted">
+                <div class="price-feature">
+                  <p id="dfcolor"><i class="fa fa-star"></i><span class="benefits-spacing">275 Minutes</span></p>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <form action="https://linkedinmanager.us11.list-manage.com/subscribe/post?u=c7ab059b1c7111607807ae6fd&amp;id=80cabd1cd4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                            <div class="row">
-                                <div class="col-md-6 col-md-offset-3">
-                                    
-                                    <div class="form-group">
-                                        <input type="email" name="EMAIL" class="form-control" placeholder="Your Email" id="email" required="" data-validation-required-message="Please enter your email address.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    
-                                </div>                                
-                                <div class="clearfix"></div>
-                                <div class="col-lg-12 text-center">
-                                    <div id="success"></div>
-                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_c7ab059b1c7111607807ae6fd_80cabd1cd4" tabindex="-1" value=""></div>
-                                    <button type="submit" class="btn btn-xl">Contact Me</button>
-                                </div>
-
-                                  
-                                  <iframe height="420" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none"  src="https://callanswered.wufoo.com/embed/z6rl5c705ypbh4/"><a href="https://callanswered.wufoo.com/forms/z6rl5c705ypbh4/">Fill out my Wufoo form!</a></iframe><div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;"><span class="notranslate">The easy to use <a href="http://www.wufoo.com/form-builder/">Wufoo form builder</a> helps you make forms easy, fast, and fun.</span></div>
-
-
-
-                            </div>
-                        </form>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <span class="copyright">Copyright © 2015 CallAnswered</span>
-                    </div>
-                    <div class="col-md-4">
-                        <ul class="list-inline social-buttons">
-<!--                             <li><a href="https://twitter.com/ManageLinkedin"><i class="fa fa-twitter"></i></a>
+
+          <div class="col-xs-12 col-md-3">
+            <div class="panel">
+              <div class="panel-heading pricing-heading">
+                <h3 class="panel-title">Premium Plan</h3>
+              </div>
+              <div class="panel-body panel-body-style">
+                <span class="price-amount">$499</span>/month
+              </div>
+              <div class="pricing-panel-details text-muted">
+                <div class="price-feature">
+                  <p id="dfcolor"><i class="fa fa-star"></i><span class="benefits-spacing">475 Minutes</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="center-content">
+        <span class="text-minified text-muted">$85 setup charge applied at sign-up | Higher volume packages are available upon request.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Contact</h2>
+          <h3 class="section-subheading text-muted">Contact me with more information about your product</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+          <form id="form1" name="form1" action="https://callanswered.wufoo.com/embed/z6rl5c705ypbh4/def/embedKey=z6rl5c705ypbh4783071&entsource=&referrer=" method="post" enctype="multipart/form-data" novalidate>
+            <div class="form-group">
+              <input id="Field1" class="form-control" name="Field1" placeholder="First Name" required>
+            </div>
+            <div class="form-group">
+              <input id="Field2" class="form-control" name="Field2" type="text" placeholder="Last Name" required>
+            </div>
+            <div class="form-group">
+              <input id="Field5" class="form-control" name="Field5" type="tel" placeholder="Phone Number" required>
+            </div>
+            <div class="form-group">
+              <input id="Field3" class="form-control" name="Field3" type="email" placeholder="Your Email" required>
+            </div>
+            <div>
+              <input type="hidden" id="idstamp" name="idstamp" value="UrEj1Lq/TD0FQCCdjvDMQkZZL4/BdnCRDQnMmv6xCe0=">
+            </div>
+            <div class="col-lg-12 text-center">
+              <button type="submit" class="btn btn-xl">Contact Me</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <span class="copyright">Copyright © 2015 CallAnswered</span>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <!--                             <li><a href="https://twitter.com/ManageLinkedin"><i class="fa fa-twitter"></i></a>
                             </li>
                             <li><a href="#"><i class="fa fa-facebook"></i></a>
                             </li>
                             <li><a href="#"><i class="fa fa-linkedin"></i></a>
                             </li> -->
 
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <ul class="list-inline quicklinks">
-                            <li><a href="#">Privacy Policy</a>
-                            </li>
-                            <li><a href="#">Terms of Use</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline quicklinks">
+            <li><a href="#">Privacy Policy</a>
+            </li>
+            <li><a href="#">Terms of Use</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
-        <!-- jQuery -->
-        <script src="js/jquery.js"></script>
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
 
-        <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
 
-        <!-- Plugin JavaScript -->
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-        <script src="js/classie.js"></script>
-        <script src="js/cbpAnimatedHeader.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="js/classie.js"></script>
+  <script src="js/cbpAnimatedHeader.js"></script>
 
-        <!-- Contact Form JavaScript -->
-        <script src="js/jqBootstrapValidation.js"></script>
-        <script src="js/contact_me.js"></script>
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/wufoo.js"></script>
 
-        <!-- Custom Theme JavaScript -->
-        <script src="js/agency.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script src="js/agency.js"></script>
 
-        
+</body>
 
-
-    </body>
 </html>
